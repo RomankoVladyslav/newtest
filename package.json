@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test --config=autotests/playwright.config.js"
+    "test:ui": "cd autotests && npx playwright test",
+    "test:api": "cd testapi && npx jest case3.js && npx jest case4.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,3 +15,5 @@
     "jest": "^27.2.2"
   }
 }
+
+
